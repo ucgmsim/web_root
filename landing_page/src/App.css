@@ -19,14 +19,21 @@
   color: black;
 }
 
-.small-font {
-  font-size: 12px !important;
+.btn-size {
+  font-size: calc(0.9vh + 0.9vw) !important;
 }
 
 .logo {
   margin-top: 1vh;
   margin-bottom: 2vh;
   width: calc(17vh + 17vw);
+}
+
+.carousel-p {
+  font-size: calc(0.75vh + 0.75vw);
+  width: 50vw;
+  margin-left: 10vw; 
+  margin-bottom: 0.5vh !important;
 }
 
 .centre-text {
@@ -36,19 +43,7 @@
   align-items: center;
 }
 
-
-.carousel-p {
-  font-size: medium;
-  width: 40vw;
-  margin-left: 15vw; 
-  margin-bottom: 0.5vh !important;
-}
-
 .card-p {
-  font-size: 15px;
+  font-size: calc(0.8vh + 0.8vw);
   text-align: center;
-}
-
-.card-btn {
-  font-size: medium;
 }

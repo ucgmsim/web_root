@@ -6,8 +6,6 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 function App() {
   const [ratio, setRatio] = useState(window.innerWidth / window.innerHeight);
   const viewBreakpoint = 1;
-  const carouselSizeBreakpoint = 1.3;
-  const cardSizeBreakpoint = 0.62;
 
   useEffect(() => {
     window.addEventListener("resize", () =>
@@ -18,10 +16,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img
-          src="watermark.png"
-          className="logo"
-        />
+        <img src="watermark.png" className="logo" />
         {ratio > viewBreakpoint && (
           <Carousel className="size-scrolling">
             <Carousel.Item>
@@ -32,23 +27,13 @@ function App() {
               />
               <Carousel.Caption>
                 <a
-                  className={
-                    ratio < carouselSizeBreakpoint
-                      ? "btn btn-lg btn-primary mb-3 small-font"
-                      : "btn btn-lg btn-primary mb-3"
-                  }
+                  className="btn btn-lg btn-primary mb-3 btn-size"
                   href="https://quakecoresoft.canterbury.ac.nz/sim_atlas"
                   role="button"
                 >
                   Launch Simulation Atlas
                 </a>
-                <p
-                  className={
-                    ratio < carouselSizeBreakpoint
-                      ? "dark small-font carousel-p"
-                      : "dark carousel-p"
-                  }
-                >
+                <p className="dark carousel-p">
                   Mapped active faults in New Zealand, their properties, and an
                   illustrative ground motion simulation for a potential major
                   earthquake on each fault.
@@ -64,23 +49,13 @@ function App() {
 
               <Carousel.Caption>
                 <a
-                  className={
-                    ratio < carouselSizeBreakpoint
-                      ? "btn btn-lg btn-primary mb-3 small-font"
-                      : "btn btn-lg btn-primary mb-3"
-                  }
+                  className="btn btn-lg btn-primary mb-3 btn-size"
                   href="https://quakecoresoft.canterbury.ac.nz/vs30"
                   role="button"
                 >
                   Launch Vs30 Map
                 </a>
-                <p
-                  className={
-                    ratio < carouselSizeBreakpoint
-                      ? "small-font carousel-p"
-                      : "carousel-p"
-                  }
-                >
+                <p className="carousel-p">
                   Vs30 models / categories, and measured sites.
                 </p>
               </Carousel.Caption>
@@ -94,23 +69,13 @@ function App() {
 
               <Carousel.Caption>
                 <a
-                  className={
-                    ratio < carouselSizeBreakpoint
-                      ? "btn btn-lg btn-primary mb-3 small-font"
-                      : "btn btn-lg btn-primary mb-3"
-                  }
+                  className="btn btn-lg btn-primary mb-3 btn-size"
                   href="https://quakecoresoft.canterbury.ac.nz/gmhazard"
                   role="button"
                 >
                   Launch GMHazard
                 </a>
-                <p
-                  className={
-                    ratio < carouselSizeBreakpoint
-                      ? "dark small-font carousel-p"
-                      : "dark carousel-p"
-                  }
-                >
+                <p className="dark carousel-p">
                   Calculation of Hazard Analysis at site specific locations
                   around New Zealand.
                 </p>
@@ -125,23 +90,13 @@ function App() {
 
               <Carousel.Caption>
                 <a
-                  className={
-                    ratio < carouselSizeBreakpoint
-                      ? "btn btn-lg btn-primary mb-3 small-font"
-                      : "btn btn-lg btn-primary mb-3"
-                  }
+                  className="btn btn-lg btn-primary mb-3 btn-size"
                   href="https://quakecoresoft.canterbury.ac.nz/code_hazard"
                   role="button"
                 >
                   Launch Code Hazard
                 </a>
-                <p
-                  className={
-                    ratio < carouselSizeBreakpoint
-                      ? "small-font carousel-p"
-                      : "carousel-p"
-                  }
-                >
+                <p className="carousel-p">
                   Displays NZS1170.5 Hazard Map information across New Zealand.
                 </p>
               </Carousel.Caption>
@@ -155,23 +110,13 @@ function App() {
 
               <Carousel.Caption>
                 <a
-                  className={
-                    ratio < carouselSizeBreakpoint
-                      ? "btn btn-lg btn-primary mb-3 small-font"
-                      : "btn btn-lg btn-primary mb-3"
-                  }
+                  className="btn btn-lg btn-primary mb-3 btn-size"
                   href="https://quakecoresoft.canterbury.ac.nz/vs_viewer"
                   role="button"
                 >
                   Launch VsViewer
                 </a>
-                <p
-                  className={
-                    ratio < carouselSizeBreakpoint
-                      ? "dark small-font carousel-p"
-                      : "dark carousel-p"
-                  }
-                >
+                <p className="dark carousel-p">
                   Visualising CPT / SPT / VsProfiles to infer informed Vs30
                   values.
                 </p>
@@ -184,26 +129,18 @@ function App() {
             <div className="card mb-3 d-sm-block mx-2">
               <img
                 src="app_1_banner.png"
-                class="card-img-top"
+                className="card-img-top"
                 alt="simulation atlas"
               />
               <div className="card-body centre-text">
                 <a
-                  className={
-                    ratio < cardSizeBreakpoint
-                      ? "btn btn-lg btn-primary mb-3 card-btn small-font"
-                      : "btn btn-lg btn-primary mb-3 card-btn"
-                  }
+                  className="btn btn-lg btn-primary mb-3 btn-size"
                   href="https://quakecoresoft.canterbury.ac.nz/sim_atlas"
                   role="button"
                 >
                   Launch Simulation Atlas
                 </a>
-                <p
-                  className={
-                    ratio < cardSizeBreakpoint ? "small-font card-p" : "card-p"
-                  }
-                >
+                <p className="card-p">
                   Mapped active faults in New Zealand, their properties, and an
                   illustrative ground motion simulation for a potential major
                   earthquake on each fault.
@@ -211,47 +148,39 @@ function App() {
               </div>
             </div>
             <div className="card mb-3 d-sm-block mx-2">
-              <img src="app_2_banner.png" alt="Vs30 Map" class="card-img-top" />
+              <img
+                src="app_2_banner.png"
+                alt="Vs30 Map"
+                className="card-img-top"
+              />
               <div className="card-body centre-text">
                 <a
-                  className={
-                    ratio < cardSizeBreakpoint
-                      ? "btn btn-lg btn-primary mb-3 card-btn small-font"
-                      : "btn btn-lg btn-primary mb-3 card-btn"
-                  }
+                  className="btn btn-lg btn-primary mb-3 btn-size"
                   href="https://quakecoresoft.canterbury.ac.nz/vs30"
                   role="button"
                 >
                   Launch Vs30 Map
                 </a>
-                <p
-                  className={
-                    ratio < cardSizeBreakpoint ? "small-font card-p" : "card-p"
-                  }
-                >
+                <p className="card-p">
                   Vs30 models / categories, and measured sites.
                 </p>
               </div>
             </div>
             <div className="card mb-3 d-sm-block mx-2">
-              <img src="app_3_banner.jpg" alt="GMHazard" class="card-img-top" />
+              <img
+                src="app_3_banner.jpg"
+                alt="GMHazard"
+                className="card-img-top"
+              />
               <div className="card-body centre-text">
                 <a
-                  className={
-                    ratio < cardSizeBreakpoint
-                      ? "btn btn-lg btn-primary mb-3 card-btn small-font"
-                      : "btn btn-lg btn-primary mb-3 card-btn"
-                  }
+                  className="btn btn-lg btn-primary mb-3 btn-size"
                   href="https://quakecoresoft.canterbury.ac.nz/gmhazard"
                   role="button"
                 >
                   Launch GMHazard
                 </a>
-                <p
-                  className={
-                    ratio < cardSizeBreakpoint ? "small-font card-p" : "card-p"
-                  }
-                >
+                <p className="card-p">
                   Calculation of Hazard Analysis at site specific locations
                   around New Zealand.
                 </p>
@@ -261,48 +190,36 @@ function App() {
               <img
                 src="app_4_banner.png"
                 alt="Code Hazard"
-                class="card-img-top"
+                className="card-img-top"
               />
               <div className="card-body centre-text">
                 <a
-                  className={
-                    ratio < cardSizeBreakpoint
-                      ? "btn btn-lg btn-primary mb-3 card-btn small-font"
-                      : "btn btn-lg btn-primary mb-3 card-btn"
-                  }
+                  className="btn btn-lg btn-primary mb-3 btn-size"
                   href="https://quakecoresoft.canterbury.ac.nz/code_hazard"
                   role="button"
                 >
                   Launch Code Hazard
                 </a>
-                <p
-                  className={
-                    ratio < cardSizeBreakpoint ? "small-font card-p" : "card-p"
-                  }
-                >
+                <p className="card-p">
                   Displays NZS1170.5 Hazard Map information across New Zealand.
                 </p>
               </div>
             </div>
             <div className="card mb-3 d-sm-block mx-2">
-              <img src="app_5_banner.jpg" alt="VsViewer" class="card-img-top" />
+              <img
+                src="app_5_banner.jpg"
+                alt="VsViewer"
+                className="card-img-top"
+              />
               <div className="card-body centre-text">
                 <a
-                  className={
-                    ratio < cardSizeBreakpoint
-                      ? "btn btn-lg btn-primary mb-3 card-btn small-font"
-                      : "btn btn-lg btn-primary mb-3 card-btn"
-                  }
+                  className="btn btn-lg btn-primary mb-3 btn-size"
                   href="https://quakecoresoft.canterbury.ac.nz/vs_viewer"
                   role="button"
                 >
                   Launch VsViewer
                 </a>
-                <p
-                  className={
-                    ratio < cardSizeBreakpoint ? "small-font card-p" : "card-p"
-                  }
-                >
+                <p className="card-p">
                   Visualising CPT / SPT / VsProfiles to infer informed Vs30
                   values.
                 </p>
