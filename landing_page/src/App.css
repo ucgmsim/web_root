@@ -1,0 +1,49 @@
+.App-header {
+  background-color: whitesmoke;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(1vw + 1vh);
+  color: black;
+}
+
+.size-scrolling {
+  width: 100vw;
+  background-color: grey;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.25);
+}
+
+.dark {
+  color: black;
+}
+
+.btn-size {
+  font-size: calc(0.9vh + 0.9vw) !important;
+}
+
+.logo {
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  width: calc(17vh + 17vw);
+}
+
+.carousel-p {
+  font-size: calc(0.75vh + 0.75vw);
+  width: 50vw;
+  margin-left: 10vw; 
+  margin-bottom: 0.5vh !important;
+}
+
+.centre-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-p {
+  font-size: calc(0.8vh + 0.8vw);
+  text-align: center;
+}
