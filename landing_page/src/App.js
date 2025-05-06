@@ -137,7 +137,7 @@ function App() {
                   Launch NZCVM Web App
                 </a>
                 <p className="dark carousel-p">
-                  A website to help create configuraiton files for the New Zealand Community Velocity Model.
+                  An interactive interface for the New Zealand Community Velocity Model (NZCVM).
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
@@ -298,7 +298,7 @@ function App() {
                   Launch NZCVM Web App
                 </a>
                 <p className="card-p">
-                  A website to help create configuraiton files for the New Zealand Community Velocity Model.
+                  An interactive interface for the New Zealand Community Velocity Model (NZCVM).
                 </p>
               </div>
             </div>
