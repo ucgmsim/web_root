@@ -64,20 +64,19 @@ function App() {
               <img
                 className="d-block w-100"
                 src="app_3_banner.jpg"
-                alt="GMHazard"
+                alt="SeismicNow"
               />
 
               <Carousel.Caption>
                 <a
                   className="btn btn-lg btn-primary mb-3 btn-size"
-                  href="https://quakecoresoft.canterbury.ac.nz/gmhazard"
+                  href="https://quakecoresoft.canterbury.ac.nz/seismic_now"
                   role="button"
                 >
-                  Launch GMHazard
+                  Launch SeismicNow
                 </a>
                 <p className="dark carousel-p">
-                  Calculation of Hazard Analysis at site specific locations
-                  around New Zealand.
+                  Near real-time ground motion analysis for New Zealand.
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
@@ -119,6 +118,66 @@ function App() {
                 <p className="dark carousel-p">
                   Visualising CPT / SPT / VsProfiles to infer informed Vs30
                   values.
+                </p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="app_6_banner.jpg"
+                alt="NZCVM Web App"
+              />
+
+              <Carousel.Caption>
+                <a
+                  className="btn btn-lg btn-primary mb-3 btn-size"
+                  href="https://quakecoresoft.canterbury.ac.nz/nzcvm_web_app"
+                  role="button"
+                >
+                  Launch NZCVM Web App
+                </a>
+                <p className="dark carousel-p">
+                  A website to help create configuraiton files for the New Zealand Community Velocity Model.
+                </p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="app_7_banner.jpg"
+                alt="NZGD"
+              />
+
+              <Carousel.Caption>
+                <a
+                  className="btn btn-lg btn-primary mb-3 btn-size"
+                  href="https://quakecoresoft.canterbury.ac.nz/nzgd"
+                  role="button"
+                >
+                  Launch NZGD
+                </a>
+                <p className="dark carousel-p">
+                  Access to CPT and SPT data extracted from NZGD borehole records.
+                </p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="app_8_banner.jpg"
+                alt="Docs"
+              />
+
+              <Carousel.Caption>
+                <a
+                  className="btn btn-lg btn-primary mb-3 btn-size"
+                  href="https://quakecoresoft.canterbury.ac.nz/docs"
+                  role="button"
+                >
+                  Launch Docs
+                </a>
+                <p className="dark carousel-p">
+                  Simple nginx-based docker container for hosting QCore docs.
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
@@ -175,14 +234,13 @@ function App() {
               <div className="card-body centre-text">
                 <a
                   className="btn btn-lg btn-primary mb-3 btn-size"
-                  href="https://quakecoresoft.canterbury.ac.nz/gmhazard"
+                  href="https://quakecoresoft.canterbury.ac.nz/seismic_now"
                   role="button"
                 >
-                  Launch GMHazard
+                  Launch SeismicNow
                 </a>
                 <p className="card-p">
-                  Calculation of Hazard Analysis at site specific locations
-                  around New Zealand.
+                  Near real-time ground motion analysis for New Zealand.
                 </p>
               </div>
             </div>
@@ -222,6 +280,64 @@ function App() {
                 <p className="card-p">
                   Visualising CPT / SPT / VsProfiles to infer informed Vs30
                   values.
+                </p>
+              </div>
+            </div>
+            <div className="card mb-3 d-sm-block mx-2">
+              <img
+                src="app_6_banner.jpg"
+                alt="NZCVM Web App"
+                className="card-img-top"
+              />
+              <div className="card-body centre-text">
+                <a
+                  className="btn btn-lg btn-primary mb-3 btn-size"
+                  href="https://quakecoresoft.canterbury.ac.nz/nzcvm_web_app"
+                  role="button"
+                >
+                  Launch NZCVM Web App
+                </a>
+                <p className="card-p">
+                  A website to help create configuraiton files for the New Zealand Community Velocity Model.
+                </p>
+              </div>
+            </div>
+            <div className="card mb-3 d-sm-block mx-2">
+              <img
+                src="app_7_banner.jpg"
+                alt="NZGD"
+                className="card-img-top"
+              />
+              <div className="card-body centre-text">
+                <a
+                  className="btn btn-lg btn-primary mb-3 btn-size"
+                  href="https://quakecoresoft.canterbury.ac.nz/nzgd"
+                  role="button"
+                >
+                  Launch NZGD
+                </a>
+                <p className="card-p">
+                  Access to CPT and SPT data extracted from NZGD borehole
+                  records.
+                </p>
+              </div>
+            </div>
+            <div className="card mb-3 d-sm-block mx-2">
+              <img
+                src="app_8_banner.jpg"
+                alt="Docs"
+                className="card-img-top"
+              />
+              <div className="card-body centre-text">
+                <a
+                  className="btn btn-lg btn-primary mb-3 btn-size"
+                  href="https://quakecoresoft.canterbury.ac.nz/docs"
+                  role="button"
+                >
+                  Launch Docs
+                </a>
+                <p className="card-p">
+                  Simple nginx-based docker container for hosting QCore docs.
                 </p>
               </div>
             </div>
