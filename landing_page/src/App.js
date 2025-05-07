@@ -157,7 +157,7 @@ function App() {
                   Launch NZGD
                 </a>
                 <p className="dark carousel-p">
-                  Access to CPT and SPT data extracted from NZGD borehole records.
+                  Access standardized Cone Penetration Test (CPT) and Standard Penetration Test (SPT) data, derived from records hosted by the New Zealand Geotechnical Database (NZGD).
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
@@ -317,8 +317,7 @@ function App() {
                   Launch NZGD
                 </a>
                 <p className="card-p">
-                  Access to CPT and SPT data extracted from NZGD borehole
-                  records.
+                  Access standardized Cone Penetration Test (CPT) and Standard Penetration Test (SPT) data, derived from records hosted by the New Zealand Geotechnical Database (NZGD).
                 </p>
               </div>
             </div>
