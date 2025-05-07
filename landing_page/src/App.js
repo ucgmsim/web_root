@@ -131,7 +131,7 @@ function App() {
               <Carousel.Caption>
                 <a
                   className="btn btn-lg btn-primary mb-3 btn-size"
-                  href="https://quakecoresoft.canterbury.ac.nz/nzcvm_web_app"
+                  href="https://quakecoresoft.canterbury.ac.nz/nzcvm_webapp"
                   role="button"
                 >
                   Launch NZCVM Web App
@@ -292,7 +292,7 @@ function App() {
               <div className="card-body centre-text">
                 <a
                   className="btn btn-lg btn-primary mb-3 btn-size"
-                  href="https://quakecoresoft.canterbury.ac.nz/nzcvm_web_app"
+                  href="https://quakecoresoft.canterbury.ac.nz/nzcvm_webapp"
                   role="button"
                 >
                   Launch NZCVM Web App
