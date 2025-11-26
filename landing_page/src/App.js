@@ -181,6 +181,27 @@ function App() {
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="app_9_banner.jpg"
+                alt="Docs"
+              />
+
+              <Carousel.Caption>
+                <a
+                  className="btn btn-lg btn-primary mb-3 btn-size"
+                  href="https://quakecoresoft.canterbury.ac.nz/nzgmdb"
+                  role="button"
+                >
+                  Launch NZGMDB
+                </a>
+                <p className="dark carousel-p">
+                  New Zealand Ground Motion Database (NZGMDB) for accessing and
+                  downloading strong motion records from New Zealand earthquakes.
+                </p>
+              </Carousel.Caption>
+            </Carousel.Item>
           </Carousel>
         )}
         {ratio <= viewBreakpoint && (
@@ -337,6 +358,26 @@ function App() {
                 </a>
                 <p className="card-p">
                   Simple nginx-based docker container for hosting QCore docs.
+                </p>
+              </div>
+            </div>
+            <div className="card mb-3 d-sm-block mx-2">
+              <img
+                src="app_9_banner.jpg"
+                alt="NZGMDB"
+                className="card-img-top"
+              />
+              <div className="card-body centre-text">
+                <a
+                  className="btn btn-lg btn-primary mb-3 btn-size"
+                  href="https://quakecoresoft.canterbury.ac.nz/nzgmdb"
+                  role="button"
+                >
+                  Launch NZGMDB
+                </a>
+                <p className="card-p">
+                  New Zealand Ground Motion Database (NZGMDB) for accessing and
+                  downloading strong motion records from New Zealand earthquakes.
                 </p>
               </div>
             </div>
