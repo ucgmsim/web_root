@@ -185,7 +185,7 @@ function App() {
               <img
                 className="d-block w-100"
                 src="app_9_banner.jpg"
-                alt="Docs"
+                alt="NZGMDB"
               />
 
               <Carousel.Caption>
@@ -199,6 +199,28 @@ function App() {
                 <p className="dark carousel-p">
                   New Zealand Ground Motion Database (NZGMDB) for accessing and
                   downloading strong motion records from New Zealand earthquakes.
+                </p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="app_10_banner.jpg"
+                alt="NZSDB"
+              />
+
+              <Carousel.Caption>
+                <a
+                  className="btn btn-lg btn-primary mb-3 btn-size"
+                  href="https://quakecoresoft.canterbury.ac.nz/simulation_db"
+                  role="button"
+                >
+                  Launch NZSDB
+                </a>
+                <p className="dark carousel-p">
+                  New Zealand Simulation Database (NZSDB) for exploring and
+                  downloading simulated ground motions for past and future New
+                  Zealand earthquakes.
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
@@ -378,6 +400,27 @@ function App() {
                 <p className="card-p">
                   New Zealand Ground Motion Database (NZGMDB) for accessing and
                   downloading strong motion records from New Zealand earthquakes.
+                </p>
+              </div>
+            </div>
+            <div className="card mb-3 d-sm-block mx-2">
+              <img
+                src="app_10_banner.jpg"
+                alt="NZSDB"
+                className="card-img-top"
+              />
+              <div className="card-body centre-text">
+                <a
+                  className="btn btn-lg btn-primary mb-3 btn-size"
+                  href="https://quakecoresoft.canterbury.ac.nz/simulation_db"
+                  role="button"
+                >
+                  Launch NZSDB
+                </a>
+                <p className="card-p">
+                  New Zealand Simulation Database (NZSDB) for exploring and
+                  downloading simulated ground motions for past and future New
+                  Zealand earthquakes.
                 </p>
               </div>
             </div>
