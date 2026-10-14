@@ -8,9 +8,7 @@ function App() {
   const viewBreakpoint = 1;
 
   useEffect(() => {
-    window.addEventListener("resize", () =>
-      setRatio(window.innerWidth / window.innerHeight)
-    );
+    window.addEventListener("resize", () => setRatio(window.innerWidth / window.innerHeight));
   }, []);
 
   return (
@@ -20,11 +18,7 @@ function App() {
         {ratio > viewBreakpoint && (
           <Carousel className="size-scrolling">
             <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="app_1_banner.png"
-                alt="Simulation Atlas"
-              />
+              <img className="d-block w-100" src="app_1_banner.png" alt="Simulation Atlas" />
               <Carousel.Caption>
                 <a
                   className="btn btn-lg btn-primary mb-3 btn-size"
@@ -34,18 +28,13 @@ function App() {
                   Launch Simulation Atlas
                 </a>
                 <p className="dark carousel-p">
-                  Mapped active faults in New Zealand, their properties, and an
-                  illustrative ground motion simulation for a potential major
-                  earthquake on each fault.
+                  Mapped active faults in New Zealand, their properties, and an illustrative ground motion simulation
+                  for a potential major earthquake on each fault.
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="app_2_banner.png"
-                alt="Vs30 Map"
-              />
+              <img className="d-block w-100" src="app_2_banner.png" alt="Vs30 Map" />
 
               <Carousel.Caption>
                 <a
@@ -55,17 +44,11 @@ function App() {
                 >
                   Launch Vs30 Map
                 </a>
-                <p className="carousel-p">
-                  Vs30 models / categories, and measured sites.
-                </p>
+                <p className="carousel-p">Vs30 models / categories, and measured sites.</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="app_3_banner.jpg"
-                alt="SeismicNow"
-              />
+              <img className="d-block w-100" src="app_3_banner.jpg" alt="SeismicNow" />
 
               <Carousel.Caption>
                 <a
@@ -75,17 +58,11 @@ function App() {
                 >
                   Launch SeismicNow
                 </a>
-                <p className="dark carousel-p">
-                  Near real-time ground motion analysis for New Zealand.
-                </p>
+                <p className="dark carousel-p">Near real-time ground motion analysis for New Zealand.</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="app_4_banner.png"
-                alt="Code Hazard"
-              />
+              <img className="d-block w-100" src="app_4_banner.png" alt="Code Hazard" />
 
               <Carousel.Caption>
                 <a
@@ -95,17 +72,11 @@ function App() {
                 >
                   Launch Code Hazard
                 </a>
-                <p className="carousel-p">
-                  Displays NZS1170.5 Hazard Map information across New Zealand.
-                </p>
+                <p className="carousel-p">Displays NZS1170.5 Hazard Map information across New Zealand.</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="app_5_banner.jpg"
-                alt="VsViewer"
-              />
+              <img className="d-block w-100" src="app_5_banner.jpg" alt="VsViewer" />
 
               <Carousel.Caption>
                 <a
@@ -115,18 +86,11 @@ function App() {
                 >
                   Launch VsViewer
                 </a>
-                <p className="dark carousel-p">
-                  Visualising CPT / SPT / VsProfiles to infer informed Vs30
-                  values.
-                </p>
+                <p className="dark carousel-p">Visualising CPT / SPT / VsProfiles to infer informed Vs30 values.</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="app_6_banner.jpg"
-                alt="NZCVM Web App"
-              />
+              <img className="d-block w-100" src="app_6_banner.jpg" alt="NZCVM Web App" />
 
               <Carousel.Caption>
                 <a
@@ -142,11 +106,7 @@ function App() {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="app_7_banner.jpg"
-                alt="NZGD"
-              />
+              <img className="d-block w-100" src="app_7_banner.jpg" alt="NZGD" />
 
               <Carousel.Caption>
                 <a
@@ -157,16 +117,13 @@ function App() {
                   Launch NZGD
                 </a>
                 <p className="dark carousel-p">
-                  Access standardized Cone Penetration Test (CPT) and Standard Penetration Test (SPT) data, derived from records hosted by the New Zealand Geotechnical Database (NZGD).
+                  Access standardized Cone Penetration Test (CPT) and Standard Penetration Test (SPT) data, derived from
+                  records hosted by the New Zealand Geotechnical Database (NZGD).
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="app_8_banner.jpg"
-                alt="Docs"
-              />
+              <img className="d-block w-100" src="app_8_banner.jpg" alt="Docs" />
 
               <Carousel.Caption>
                 <a
@@ -176,17 +133,11 @@ function App() {
                 >
                   Launch Docs
                 </a>
-                <p className="dark carousel-p">
-                  Simple nginx-based docker container for hosting QCore docs.
-                </p>
+                <p className="dark carousel-p">Simple nginx-based docker container for hosting QCore docs.</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="app_9_banner.jpg"
-                alt="NZGMDB"
-              />
+              <img className="d-block w-100" src="app_9_banner.jpg" alt="NZGMDB" />
 
               <Carousel.Caption>
                 <a
@@ -197,17 +148,13 @@ function App() {
                   Launch NZGMDB
                 </a>
                 <p className="dark carousel-p">
-                  New Zealand Ground Motion Database (NZGMDB) for accessing and
-                  downloading strong motion records from New Zealand earthquakes.
+                  New Zealand Ground Motion Database (NZGMDB) for accessing and downloading strong motion records from
+                  New Zealand earthquakes.
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="app_10_banner.jpg"
-                alt="NZSDB"
-              />
+              <img className="d-block w-100" src="app_10_banner.jpg" alt="NZSDB" />
 
               <Carousel.Caption>
                 <a
@@ -218,9 +165,8 @@ function App() {
                   Launch NZSDB
                 </a>
                 <p className="dark carousel-p">
-                  New Zealand Simulation Database (NZSDB) for exploring and
-                  downloading simulated ground motions for past and future New
-                  Zealand earthquakes.
+                  New Zealand Simulation Database (NZSDB) for exploring and downloading simulated ground motions for
+                  past and future New Zealand earthquakes.
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
@@ -229,11 +175,7 @@ function App() {
         {ratio <= viewBreakpoint && (
           <div>
             <div className="card mb-3 d-sm-block mx-2">
-              <img
-                src="app_1_banner.png"
-                className="card-img-top"
-                alt="simulation atlas"
-              />
+              <img src="app_1_banner.png" className="card-img-top" alt="simulation atlas" />
               <div className="card-body centre-text">
                 <a
                   className="btn btn-lg btn-primary mb-3 btn-size"
@@ -243,18 +185,13 @@ function App() {
                   Launch Simulation Atlas
                 </a>
                 <p className="card-p">
-                  Mapped active faults in New Zealand, their properties, and an
-                  illustrative ground motion simulation for a potential major
-                  earthquake on each fault.
+                  Mapped active faults in New Zealand, their properties, and an illustrative ground motion simulation
+                  for a potential major earthquake on each fault.
                 </p>
               </div>
             </div>
             <div className="card mb-3 d-sm-block mx-2">
-              <img
-                src="app_2_banner.png"
-                alt="Vs30 Map"
-                className="card-img-top"
-              />
+              <img src="app_2_banner.png" alt="Vs30 Map" className="card-img-top" />
               <div className="card-body centre-text">
                 <a
                   className="btn btn-lg btn-primary mb-3 btn-size"
@@ -263,17 +200,11 @@ function App() {
                 >
                   Launch Vs30 Map
                 </a>
-                <p className="card-p">
-                  Vs30 models / categories, and measured sites.
-                </p>
+                <p className="card-p">Vs30 models / categories, and measured sites.</p>
               </div>
             </div>
             <div className="card mb-3 d-sm-block mx-2">
-              <img
-                src="app_3_banner.jpg"
-                alt="GMHazard"
-                className="card-img-top"
-              />
+              <img src="app_3_banner.jpg" alt="GMHazard" className="card-img-top" />
               <div className="card-body centre-text">
                 <a
                   className="btn btn-lg btn-primary mb-3 btn-size"
@@ -282,17 +213,11 @@ function App() {
                 >
                   Launch SeismicNow
                 </a>
-                <p className="card-p">
-                  Near real-time ground motion analysis for New Zealand.
-                </p>
+                <p className="card-p">Near real-time ground motion analysis for New Zealand.</p>
               </div>
             </div>
             <div className="card mb-3 d-sm-block mx-2">
-              <img
-                src="app_4_banner.png"
-                alt="Code Hazard"
-                className="card-img-top"
-              />
+              <img src="app_4_banner.png" alt="Code Hazard" className="card-img-top" />
               <div className="card-body centre-text">
                 <a
                   className="btn btn-lg btn-primary mb-3 btn-size"
@@ -301,17 +226,11 @@ function App() {
                 >
                   Launch Code Hazard
                 </a>
-                <p className="card-p">
-                  Displays NZS1170.5 Hazard Map information across New Zealand.
-                </p>
+                <p className="card-p">Displays NZS1170.5 Hazard Map information across New Zealand.</p>
               </div>
             </div>
             <div className="card mb-3 d-sm-block mx-2">
-              <img
-                src="app_5_banner.jpg"
-                alt="VsViewer"
-                className="card-img-top"
-              />
+              <img src="app_5_banner.jpg" alt="VsViewer" className="card-img-top" />
               <div className="card-body centre-text">
                 <a
                   className="btn btn-lg btn-primary mb-3 btn-size"
@@ -320,18 +239,11 @@ function App() {
                 >
                   Launch VsViewer
                 </a>
-                <p className="card-p">
-                  Visualising CPT / SPT / VsProfiles to infer informed Vs30
-                  values.
-                </p>
+                <p className="card-p">Visualising CPT / SPT / VsProfiles to infer informed Vs30 values.</p>
               </div>
             </div>
             <div className="card mb-3 d-sm-block mx-2">
-              <img
-                src="app_6_banner.jpg"
-                alt="NZCVM Web App"
-                className="card-img-top"
-              />
+              <img src="app_6_banner.jpg" alt="NZCVM Web App" className="card-img-top" />
               <div className="card-body centre-text">
                 <a
                   className="btn btn-lg btn-primary mb-3 btn-size"
@@ -340,17 +252,11 @@ function App() {
                 >
                   Launch NZCVM Web App
                 </a>
-                <p className="card-p">
-                  An interactive interface for the New Zealand Community Velocity Model (NZCVM).
-                </p>
+                <p className="card-p">An interactive interface for the New Zealand Community Velocity Model (NZCVM).</p>
               </div>
             </div>
             <div className="card mb-3 d-sm-block mx-2">
-              <img
-                src="app_7_banner.jpg"
-                alt="NZGD"
-                className="card-img-top"
-              />
+              <img src="app_7_banner.jpg" alt="NZGD" className="card-img-top" />
               <div className="card-body centre-text">
                 <a
                   className="btn btn-lg btn-primary mb-3 btn-size"
@@ -360,16 +266,13 @@ function App() {
                   Launch NZGD
                 </a>
                 <p className="card-p">
-                  Access standardized Cone Penetration Test (CPT) and Standard Penetration Test (SPT) data, derived from records hosted by the New Zealand Geotechnical Database (NZGD).
+                  Access standardized Cone Penetration Test (CPT) and Standard Penetration Test (SPT) data, derived from
+                  records hosted by the New Zealand Geotechnical Database (NZGD).
                 </p>
               </div>
             </div>
             <div className="card mb-3 d-sm-block mx-2">
-              <img
-                src="app_8_banner.jpg"
-                alt="Docs"
-                className="card-img-top"
-              />
+              <img src="app_8_banner.jpg" alt="Docs" className="card-img-top" />
               <div className="card-body centre-text">
                 <a
                   className="btn btn-lg btn-primary mb-3 btn-size"
@@ -378,17 +281,11 @@ function App() {
                 >
                   Launch Docs
                 </a>
-                <p className="card-p">
-                  Simple nginx-based docker container for hosting QCore docs.
-                </p>
+                <p className="card-p">Simple nginx-based docker container for hosting QCore docs.</p>
               </div>
             </div>
             <div className="card mb-3 d-sm-block mx-2">
-              <img
-                src="app_9_banner.jpg"
-                alt="NZGMDB"
-                className="card-img-top"
-              />
+              <img src="app_9_banner.jpg" alt="NZGMDB" className="card-img-top" />
               <div className="card-body centre-text">
                 <a
                   className="btn btn-lg btn-primary mb-3 btn-size"
@@ -398,17 +295,13 @@ function App() {
                   Launch NZGMDB
                 </a>
                 <p className="card-p">
-                  New Zealand Ground Motion Database (NZGMDB) for accessing and
-                  downloading strong motion records from New Zealand earthquakes.
+                  New Zealand Ground Motion Database (NZGMDB) for accessing and downloading strong motion records from
+                  New Zealand earthquakes.
                 </p>
               </div>
             </div>
             <div className="card mb-3 d-sm-block mx-2">
-              <img
-                src="app_10_banner.jpg"
-                alt="NZSDB"
-                className="card-img-top"
-              />
+              <img src="app_10_banner.jpg" alt="NZSDB" className="card-img-top" />
               <div className="card-body centre-text">
                 <a
                   className="btn btn-lg btn-primary mb-3 btn-size"
@@ -418,9 +311,8 @@ function App() {
                   Launch NZSDB
                 </a>
                 <p className="card-p">
-                  New Zealand Simulation Database (NZSDB) for exploring and
-                  downloading simulated ground motions for past and future New
-                  Zealand earthquakes.
+                  New Zealand Simulation Database (NZSDB) for exploring and downloading simulated ground motions for
+                  past and future New Zealand earthquakes.
                 </p>
               </div>
             </div>

@@ -1,0 +1,19 @@
+{
+  "lonMin": 166.0,
+  "lonMax": 179.0,
+  "latMin": -47.6,
+  "latMax": -34.0,
+  "aspect": 0.7236,
+  "pgaMin": 0.1,
+  "pgaMax": 1.0,
+  "legend": [
+    "#1E1B4B",
+    "#4C1D95",
+    "#9D174D",
+    "#F16725",
+    "#F69322",
+    "#FDE68A"
+  ],
+  "glowPadding": 0.08,
+  "source": "NSHM 2022 (NSHM_v1.0.4) PGA, 10% in 50 years, Vs30 400 m/s, mean"
+}
