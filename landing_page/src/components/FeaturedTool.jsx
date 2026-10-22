@@ -10,16 +10,18 @@ import { NEW_TAB } from "../data/site";
 import ToolImage from "./ToolImage";
 
 /**
- * Wide spotlight card for the newest or most important tool
+ * Spotlight card for a key tool; wide (image beside text) when shown alone, stacked when shown in a pair
  */
-export default function FeaturedTool({ tool }) {
+export default function FeaturedTool({ tool, stacked = false }) {
   return (
     <Card
       component="article"
       aria-labelledby={`featured-${tool.id}`}
       sx={{
         display: "grid",
-        gridTemplateColumns: { xs: "1fr", md: "7fr 5fr" },
+        gridTemplateColumns: stacked ? "1fr" : { xs: "1fr", md: "7fr 5fr" },
+        gridTemplateRows: stacked ? "auto 1fr" : undefined,
+        height: "100%",
         overflow: "hidden",
         bgcolor: HERO_BG,
         color: "#E2E8F0",
@@ -28,9 +30,12 @@ export default function FeaturedTool({ tool }) {
       }}
     >
       <Box sx={{ aspectRatio: "16 / 9", overflow: "hidden" }}>
-        <ToolImage tool={tool} sizes="(min-width: 900px) 700px, 100vw" />
+        <ToolImage
+          tool={tool}
+          sizes={stacked ? "(min-width: 1200px) 700px, 100vw" : "(min-width: 900px) 700px, 100vw"}
+        />
       </Box>
-      <Stack spacing={2} sx={{ justifyContent: "center", p: { xs: 3, md: 5 } }}>
+      <Stack spacing={2} sx={{ justifyContent: "center", p: stacked ? { xs: 3, md: 4 } : { xs: 3, md: 5 } }}>
         <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
           {tool.status && <Chip label={tool.status} color="primary" size="small" />}
           <Typography variant="overline" sx={{ color: "#94A3B8" }}>
@@ -57,7 +62,7 @@ export default function FeaturedTool({ tool }) {
             />
           ))}
         </Stack>
-        <Box>
+        <Box sx={{ mt: stacked ? "auto !important" : undefined, pt: stacked ? 1 : 0 }}>
           <Button
             variant="contained"
             size="large"

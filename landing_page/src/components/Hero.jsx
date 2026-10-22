@@ -17,6 +17,9 @@ import { HERO_BG } from "../theme";
 const HeroScene = lazy(() => import("./HeroScene"));
 
 const LEGEND_TICKS = [0.1, 0.3, 1.0];
+// Documentation is listed with the tools but is not a tool or research area
+const TOOL_COUNT = TOOLS.filter((tool) => tool.section !== "docs").length;
+const AREA_COUNT = SECTIONS.filter((section) => section.id !== "docs").length;
 
 function supportsWebGL() {
   try {
@@ -179,8 +182,8 @@ export default function Hero() {
             spacing={2.5}
             sx={{ mt: 5, color: "#94A3B8" }}
           >
-            <HeroStat value={TOOLS.length} label="web tools" />
-            <HeroStat value={SECTIONS.length} label="research areas" />
+            <HeroStat value={TOOL_COUNT} label="web tools" />
+            <HeroStat value={AREA_COUNT} label="research areas" />
             <HeroStat value="Open" label="source on GitHub" />
           </Stack>
         </Box>

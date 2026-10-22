@@ -6,7 +6,7 @@ export const SECTIONS = [
     id: "hazard",
     label: "Hazard",
     title: "Seismic Hazard & Ground Motion",
-    blurb: "Faults, scenario simulations, real-time shaking and design-level hazard.",
+    blurb: "Real-time shaking, active faults and scenario simulations.",
   },
   {
     id: "site",
@@ -28,7 +28,20 @@ export const SECTIONS = [
   },
 ];
 
-export const TOOLS = [
+// Set hidden: true to take a tool off the page without deleting its entry
+const ALL_TOOLS = [
+  {
+    id: "seismic_now",
+    name: "SeismicNow",
+    section: "hazard",
+    description: "Near real-time ground motion analysis for recent New Zealand earthquakes.",
+    details:
+      "Near real-time ground motion analysis for New Zealand, with station waveforms, intensity measures and event maps.",
+    url: `${BASE_URL}/seismic_now`,
+    tags: ["Real-time", "Waveforms", "Stations"],
+    status: "Updated",
+    featured: true,
+  },
   {
     id: "sim_atlas",
     name: "Simulation Atlas",
@@ -40,16 +53,6 @@ export const TOOLS = [
     tags: ["Faults", "Simulations", "Map"],
   },
   {
-    id: "seismic_now",
-    name: "SeismicNow",
-    section: "hazard",
-    description: "Near real-time ground motion analysis for recent New Zealand earthquakes.",
-    details:
-      "Near real-time ground motion analysis for New Zealand, with station waveforms, intensity measures and event maps.",
-    url: `${BASE_URL}/seismic_now`,
-    tags: ["Real-time", "Waveforms", "Stations"],
-  },
-  {
     id: "code_hazard",
     name: "Code Hazard",
     section: "hazard",
@@ -58,6 +61,8 @@ export const TOOLS = [
       "Displays NZS1170.5 Hazard Map information across New Zealand for a chosen return period and intensity measure.",
     url: `${BASE_URL}/code_hazard`,
     tags: ["NZS1170.5", "Design", "Map"],
+    // Offline while its data pipeline is rebuilt
+    hidden: true,
   },
   {
     id: "vs30",
@@ -124,11 +129,14 @@ export const TOOLS = [
     name: "QCore Docs",
     section: "docs",
     description: "API and module documentation for our Python packages.",
-    details: "Documentation for the software libraries behind these tools, including qcore.",
+    details:
+      "Documentation for the Python packages behind these tools, such as source_modelling, velocity_modelling, IM and workflow.",
     url: `${BASE_URL}/docs`,
     tags: ["API", "Python", "Reference"],
   },
 ];
+
+export const TOOLS = ALL_TOOLS.filter((tool) => !tool.hidden);
 
 /**
  * Lowercase text used for searching a tool

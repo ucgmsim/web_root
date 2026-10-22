@@ -55,7 +55,7 @@ export default function AboutSection() {
         >
           <Panel title="Who we are">
             <Typography color="text.secondary">
-              {SITE_NAME} ({SITE_FULL_NAME}) is the earthquake engineering research group at the{" "}
+              {SITE_NAME} ({SITE_FULL_NAME}) is an earthquake engineering research group at the{" "}
               <Link href={UC_URL} {...NEW_TAB}>
                 University of Canterbury
               </Link>
@@ -89,7 +89,7 @@ export default function AboutSection() {
             </Typography>
             <Stack spacing={1} sx={{ mt: 3 }}>
               <Link href={GITHUB_URL} {...NEW_TAB} sx={{ display: "inline-flex", alignItems: "center", gap: 0.75 }}>
-                GitHub issues <OpenInNewIcon sx={{ fontSize: 16 }} />
+                GitHub repositories <OpenInNewIcon sx={{ fontSize: 16 }} />
               </Link>
               {CONTACT_EMAIL && (
                 <Link href={`mailto:${CONTACT_EMAIL}`} sx={{ display: "inline-flex", alignItems: "center", gap: 0.75 }}>

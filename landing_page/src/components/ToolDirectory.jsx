@@ -12,7 +12,7 @@ import ToolCard from "./ToolCard";
 import ToolFilters from "./ToolFilters";
 
 const SEARCH_INDEX = TOOLS.map((tool) => ({ tool, text: searchText(tool) }));
-const FEATURED = TOOLS.find((tool) => tool.featured);
+const FEATURED = TOOLS.filter((tool) => tool.featured);
 
 const gridSx = {
   display: "grid",
@@ -109,9 +109,18 @@ export default function ToolDirectory() {
           </Stack>
         ) : (
           <>
-            {FEATURED && (
-              <Box sx={{ mt: 3 }}>
-                <FeaturedTool tool={FEATURED} />
+            {FEATURED.length > 0 && (
+              <Box
+                sx={{
+                  mt: 3,
+                  display: "grid",
+                  gap: 3,
+                  gridTemplateColumns: { xs: "1fr", lg: FEATURED.length > 1 ? "repeat(2, 1fr)" : "1fr" },
+                }}
+              >
+                {FEATURED.map((tool) => (
+                  <FeaturedTool key={tool.id} tool={tool} stacked={FEATURED.length > 1} />
+                ))}
               </Box>
             )}
             {favouriteTools.length > 0 && (

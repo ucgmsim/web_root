@@ -5,7 +5,7 @@ export const BASE_URL = "https://quakecoresoft.canterbury.ac.nz";
 export const GITHUB_URL = "https://github.com/ucgmsim";
 export const UC_URL = "https://www.canterbury.ac.nz";
 export const DOCS_URL = `${BASE_URL}/docs`;
-export const CONTACT_EMAIL = null;
+export const CONTACT_EMAIL = "uceqeng@gmail.com";
 
 // Spread onto every external link: open in a new tab without giving it window.opener
 export const NEW_TAB = { target: "_blank", rel: "noopener noreferrer" };

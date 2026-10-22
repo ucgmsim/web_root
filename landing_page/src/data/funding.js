@@ -21,9 +21,10 @@ export const FUNDERS = [
 ];
 
 export const COMPUTING = [
-  { name: "NeSI", fullName: "New Zealand eScience Infrastructure" },
+  { name: "NeSI", fullName: "New Zealand eScience Infrastructure, now part of REANNZ", url: "https://www.reannz.co.nz" },
   { name: "Earth Sciences New Zealand", url: "https://www.earthsciences.nz" },
-  { name: "BSC", fullName: "Barcelona Supercomputing Center", url: "https://www.bsc.es" },
-  { name: "TACC", fullName: "Texas Advanced Computing Center", url: "https://tacc.utexas.edu" },
+  { name: "BSC", fullName: "Barcelona Supercomputing Centre", url: "https://www.bsc.es" },
+  { name: "TACC", fullName: "Texas Advanced Computing Centre", url: "https://tacc.utexas.edu" },
+  // No link: kisti.re.kr is not reachable from NZ
   { name: "KISTI", fullName: "Korea Institute of Science and Technology Information" },
 ];
