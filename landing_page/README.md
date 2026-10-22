@@ -1,29 +1,39 @@
 # Landing Page
 
-Shows the develoed web applications of the QuakeCoRESoft Team.\
-This project was created using React and JavaScript.
+Homepage for the UcEqEng (UC Earthquake Engineering) web tools, built with React, Vite, MUI and three.js.
 
 ## Running the Landing Page
 
-In the project directory, you should run:
+```bash
+npm install
+npm start          # dev server on http://localhost:3000 (or $PORT)
+npm run build      # production build into build/
+npm run preview    # serve the production build locally
+```
 
-### `npm install`
+Vite 6 runs on Node 18, but Node 20+ is recommended.
 
-This will install the needed packages for this application.
+## Adding or editing a tool
 
-To run the app in development mode you can run in the project directory:
+All tools live in `src/data/tools.js`. Every card, the search and the section filters are generated from it.
 
-### `npm start`
+1. Add an entry with `id`, `name`, `section`, `description`, `details`, `url` and `tags`. Optionally add `status` (e.g. `"New"`) and `featured: true`.
+2. Add two 16:9 preview images: `public/tools/<id>.webp` (1200x675) and `public/tools/<id>_600.webp` (600x338).
 
-Open [http://localhost:3000](http://localhost:3000) to view the running app in your browser.
+Site-wide names and links (GitHub, docs, contact email) are in `src/data/site.js`. Funders and computing allocations are in `src/data/funding.js`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 3D hero map
 
-### `npm run build`
+The hero shows NZ terrain coloured by NSHM 2022 hazard: mean PGA, 10% in 50 years, Vs30 = 400 m/s. These textures are generated offline:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+NSHM_API_KEY=<key> python scripts/build_hero_assets.py --hazard-cache .cache/nshm_pga_475.npz
+```
 
-The build is minified and the filenames include the hashes.\
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Hazard values** come from the NSHM web app's GraphQL API, using the public `X-API-KEY` its front end uses. The script needs `numpy`, `scipy`, `matplotlib` and `Pillow`.
+- **Terrain** comes from Mapzen Terrarium tiles on AWS Open Data, cached in `.cache/terrain_tiles`.
+- **Outputs:**
+  - `public/hero/`: height, normal, colour and glow textures, plus the static poster.
+  - `src/data/hero_meta.json`: extent and legend.
+
+Browsers without WebGL, and phones, see the static poster. So does anyone with reduced motion turned on.

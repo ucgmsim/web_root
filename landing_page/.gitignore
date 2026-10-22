@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Terrain tile cache used by scripts/build_hero_assets.py
+/.cache
