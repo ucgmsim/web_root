@@ -4,6 +4,8 @@ export const SITE_FULL_NAME = "UC Earthquake Engineering";
 export const BASE_URL = "https://quakecoresoft.canterbury.ac.nz";
 export const GITHUB_URL = "https://github.com/ucgmsim";
 export const UC_URL = "https://www.canterbury.ac.nz";
+export const LEAD_NAME = "Brendon Bradley";
+export const LEAD_URL = "https://www.brendonbradley.com";
 export const DOCS_URL = `${BASE_URL}/docs`;
 export const CONTACT_EMAIL = "uceqeng@gmail.com";
 

@@ -8,7 +8,16 @@ import Typography from "@mui/material/Typography";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import { CONTACT_EMAIL, GITHUB_URL, NEW_TAB, SITE_FULL_NAME, SITE_NAME, UC_URL } from "../data/site";
+import {
+  CONTACT_EMAIL,
+  GITHUB_URL,
+  LEAD_NAME,
+  LEAD_URL,
+  NEW_TAB,
+  SITE_FULL_NAME,
+  SITE_NAME,
+  UC_URL,
+} from "../data/site";
 
 function Panel({ title, children }) {
   return (
@@ -58,6 +67,10 @@ export default function AboutSection() {
               {SITE_NAME} ({SITE_FULL_NAME}) is an earthquake engineering research group at the{" "}
               <Link href={UC_URL} {...NEW_TAB}>
                 University of Canterbury
+              </Link>{" "}
+              led by{" "}
+              <Link href={LEAD_URL} {...NEW_TAB}>
+                {LEAD_NAME}
               </Link>
               . Our research spans ground motion simulation, seismic hazard, site characterisation and velocity
               modelling, and we turn it into tools that researchers and engineers can use directly in the browser.
