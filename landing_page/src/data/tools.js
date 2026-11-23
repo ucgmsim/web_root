@@ -66,12 +66,15 @@ const ALL_TOOLS = [
   },
   {
     id: "vs30",
-    name: "Vs30 Map",
+    name: "Vs30 Explorer",
     section: "site",
-    description: "Vs30 models, geology and terrain categories, and measured sites.",
-    details: "Vs30 models and categories for New Zealand, with the measured sites used to build them.",
-    url: `${BASE_URL}/vs30`,
-    tags: ["Vs30", "Geology", "Map"],
+    description: "Explore and compare NZ Vs30 models on a map, or at any site.",
+    details:
+      "Map the New Zealand Vs30 models and their uncertainty, compare any two models as a log ratio, and compare the Vs30 distributions of every model at a chosen site.",
+    url: `${BASE_URL}/vs30_explorer`,
+    tags: ["Vs30", "Models", "Map"],
+    status: "New",
+    featured: true,
   },
   {
     id: "vs_viewer",
@@ -112,8 +115,6 @@ const ALL_TOOLS = [
       "New Zealand Simulation Database (NZSDB) for exploring and downloading simulated ground motions for past and future New Zealand earthquakes. Filter by event or site, inspect results on a map, and download the subset you need.",
     url: `${BASE_URL}/simulation_db`,
     tags: ["Simulations", "Database", "Downloads"],
-    status: "New",
-    featured: true,
   },
   {
     id: "nzcvm",
